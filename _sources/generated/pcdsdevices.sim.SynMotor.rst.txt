@@ -58,6 +58,7 @@ pcdsdevices.sim.SynMotor
    
       ~SynMotor.SUB_ACQ_DONE
       ~SynMotor.SUB_READBACK
+      ~SynMotor.acceleration
       ~SynMotor.component_names
       ~SynMotor.configuration_attrs
       ~SynMotor.connected
@@ -74,5 +75,7 @@ pcdsdevices.sim.SynMotor
       ~SynMotor.setpoint
       ~SynMotor.signal_names
       ~SynMotor.trigger_signals
+      ~SynMotor.unused
+      ~SynMotor.velocity
    
    
