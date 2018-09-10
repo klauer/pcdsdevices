@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeFilter.unstage
+========================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeFilter.unstage

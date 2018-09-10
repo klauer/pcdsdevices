@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.move
+==================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.move

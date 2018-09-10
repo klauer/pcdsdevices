@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.stop
+==================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.stop

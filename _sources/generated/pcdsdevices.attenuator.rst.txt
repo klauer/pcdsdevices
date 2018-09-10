@@ -23,6 +23,8 @@ pcdsdevices.attenuator
    
       AttBase
       AttBase3rd
+      FeeAtt
+      FeeFilter
       Filter
    
    

@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.set\_energy
+=========================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.set_energy

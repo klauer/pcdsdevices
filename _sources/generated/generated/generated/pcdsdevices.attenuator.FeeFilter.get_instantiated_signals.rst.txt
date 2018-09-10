@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeFilter.get\_instantiated\_signals
+===========================================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeFilter.get_instantiated_signals

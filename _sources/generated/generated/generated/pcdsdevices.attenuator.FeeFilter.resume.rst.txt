@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeFilter.resume
+=======================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeFilter.resume

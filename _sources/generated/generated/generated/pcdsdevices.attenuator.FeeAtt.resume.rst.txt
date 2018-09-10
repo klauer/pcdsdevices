@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.resume
+====================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.resume

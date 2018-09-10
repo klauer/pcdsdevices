@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.trigger
+=====================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.trigger

@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeFilter.end\_monitor\_thread
+=====================================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeFilter.end_monitor_thread

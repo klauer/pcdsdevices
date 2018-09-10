@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pcdsdevices.attenuator.FeeFilter.end_monitor_thread &mdash; PCDS Devices 0.8.0+184.g3e4112e documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="pcdsdevices.attenuator.FeeFilter.get" href="pcdsdevices.attenuator.FeeFilter.get.html" />
+    <link rel="prev" title="pcdsdevices.attenuator.FeeFilter.describe_configuration" href="pcdsdevices.attenuator.FeeFilter.describe_configuration.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> PCDS Devices
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.8.0+184.g3e4112e
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../mv.html">Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../presets.html">Preset Positions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Device Types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../epics_types.html">Common EPICS Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../base_classes.html">Base Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sim_types.html">Simulated Devices</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Notes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../releases.html">Release History</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../api.html">Full API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../pcdsdevices.attenuator.html">pcdsdevices.attenuator</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.attenuator.Attenuator.html">pcdsdevices.attenuator.Attenuator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.attenuator.AttBase.html">pcdsdevices.attenuator.AttBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.attenuator.AttBase3rd.html">pcdsdevices.attenuator.AttBase3rd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.attenuator.FeeAtt.html">pcdsdevices.attenuator.FeeAtt</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pcdsdevices.attenuator.FeeFilter.html">pcdsdevices.attenuator.FeeFilter</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.__init__.html">pcdsdevices.attenuator.FeeFilter.__init__</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.camonitor.html">pcdsdevices.attenuator.FeeFilter.camonitor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.check_value.html">pcdsdevices.attenuator.FeeFilter.check_value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.clear_sub.html">pcdsdevices.attenuator.FeeFilter.clear_sub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.configure.html">pcdsdevices.attenuator.FeeFilter.configure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.describe.html">pcdsdevices.attenuator.FeeFilter.describe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.describe_configuration.html">pcdsdevices.attenuator.FeeFilter.describe_configuration</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pcdsdevices.attenuator.FeeFilter.end_monitor_thread</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.get.html">pcdsdevices.attenuator.FeeFilter.get</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.get_device_tuple.html">pcdsdevices.attenuator.FeeFilter.get_device_tuple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.get_instantiated_signals.html">pcdsdevices.attenuator.FeeFilter.get_instantiated_signals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.get_state.html">pcdsdevices.attenuator.FeeFilter.get_state</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.insert.html">pcdsdevices.attenuator.FeeFilter.insert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.move.html">pcdsdevices.attenuator.FeeFilter.move</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.mv.html">pcdsdevices.attenuator.FeeFilter.mv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.pause.html">pcdsdevices.attenuator.FeeFilter.pause</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.put.html">pcdsdevices.attenuator.FeeFilter.put</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.read.html">pcdsdevices.attenuator.FeeFilter.read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.read_configuration.html">pcdsdevices.attenuator.FeeFilter.read_configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.remove.html">pcdsdevices.attenuator.FeeFilter.remove</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.resume.html">pcdsdevices.attenuator.FeeFilter.resume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.set.html">pcdsdevices.attenuator.FeeFilter.set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.stage.html">pcdsdevices.attenuator.FeeFilter.stage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.stop.html">pcdsdevices.attenuator.FeeFilter.stop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.subscribe.html">pcdsdevices.attenuator.FeeFilter.subscribe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.summary.html">pcdsdevices.attenuator.FeeFilter.summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.trigger.html">pcdsdevices.attenuator.FeeFilter.trigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.unstage.html">pcdsdevices.attenuator.FeeFilter.unstage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.unsubscribe.html">pcdsdevices.attenuator.FeeFilter.unsubscribe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.unsubscribe_all.html">pcdsdevices.attenuator.FeeFilter.unsubscribe_all</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.wait_for_connection.html">pcdsdevices.attenuator.FeeFilter.wait_for_connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.wm.html">pcdsdevices.attenuator.FeeFilter.wm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.wm_update.html">pcdsdevices.attenuator.FeeFilter.wm_update</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.attenuator.Filter.html">pcdsdevices.attenuator.Filter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.beam_stats.html">pcdsdevices.beam_stats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.ccm.html">pcdsdevices.ccm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.epics_motor.html">pcdsdevices.epics_motor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.evr.html">pcdsdevices.evr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.inout.html">pcdsdevices.inout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.ipm.html">pcdsdevices.ipm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.lens.html">pcdsdevices.lens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.lodcm.html">pcdsdevices.lodcm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.mirror.html">pcdsdevices.mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.movablestand.html">pcdsdevices.movablestand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.mps.html">pcdsdevices.mps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.mv_interface.html">pcdsdevices.mv_interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.pim.html">pcdsdevices.pim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.pseudopos.html">pcdsdevices.pseudopos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.pulsepicker.html">pcdsdevices.pulsepicker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.signal.html">pcdsdevices.signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.sim.html">pcdsdevices.sim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.slits.html">pcdsdevices.slits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.state.html">pcdsdevices.state</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.valve.html">pcdsdevices.valve</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">PCDS Devices</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../api.html">Full API</a> &raquo;</li>
+        
+          <li><a href="../../pcdsdevices.attenuator.html">pcdsdevices.attenuator</a> &raquo;</li>
+        
+          <li><a href="../pcdsdevices.attenuator.FeeFilter.html">pcdsdevices.attenuator.FeeFilter</a> &raquo;</li>
+        
+      <li>pcdsdevices.attenuator.FeeFilter.end_monitor_thread</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/generated/generated/generated/pcdsdevices.attenuator.FeeFilter.end_monitor_thread.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pcdsdevices-attenuator-feefilter-end-monitor-thread">
+<h1>pcdsdevices.attenuator.FeeFilter.end_monitor_thread<a class="headerlink" href="#pcdsdevices-attenuator-feefilter-end-monitor-thread" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="pcdsdevices.attenuator.FeeFilter.end_monitor_thread">
+<code class="descclassname">FeeFilter.</code><code class="descname">end_monitor_thread</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.attenuator.FeeFilter.end_monitor_thread" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop a <a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.camonitor.html#pcdsdevices.attenuator.FeeFilter.camonitor" title="pcdsdevices.attenuator.FeeFilter.camonitor"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">camonitor</span></code></a> or <a class="reference internal" href="pcdsdevices.attenuator.FeeFilter.wm_update.html#pcdsdevices.attenuator.FeeFilter.wm_update" title="pcdsdevices.attenuator.FeeFilter.wm_update"><code class="xref any py py-meth docutils literal notranslate"><span class="pre">wm_update</span></code></a> that is running in another thread.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pcdsdevices.attenuator.FeeFilter.get.html" class="btn btn-neutral float-right" title="pcdsdevices.attenuator.FeeFilter.get" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pcdsdevices.attenuator.FeeFilter.describe_configuration.html" class="btn btn-neutral" title="pcdsdevices.attenuator.FeeFilter.describe_configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, SLAC National Accelerator Laboratory.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.8.0+184.g3e4112e',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

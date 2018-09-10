@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeFilter.configure
+==========================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeFilter.configure

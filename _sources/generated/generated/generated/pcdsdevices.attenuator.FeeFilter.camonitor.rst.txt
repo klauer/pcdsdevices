@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeFilter.camonitor
+==========================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeFilter.camonitor

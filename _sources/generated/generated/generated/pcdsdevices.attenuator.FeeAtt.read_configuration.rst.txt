@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.read\_configuration
+=================================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.read_configuration

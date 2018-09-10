@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.describe\_configuration
+=====================================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.describe_configuration

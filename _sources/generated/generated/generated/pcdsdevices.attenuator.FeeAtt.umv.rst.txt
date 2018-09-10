@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.umv
+=================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.umv

@@ -1,0 +1,116 @@
+pcdsdevices.attenuator.FeeAtt
+=============================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. autoclass:: FeeAtt
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: generated
+   
+      ~FeeAtt.__init__
+      ~FeeAtt.camonitor
+      ~FeeAtt.check_value
+      ~FeeAtt.clear_sub
+      ~FeeAtt.configure
+      ~FeeAtt.describe
+      ~FeeAtt.describe_configuration
+      ~FeeAtt.end_monitor_thread
+      ~FeeAtt.get
+      ~FeeAtt.get_device_tuple
+      ~FeeAtt.get_instantiated_signals
+      ~FeeAtt.insert
+      ~FeeAtt.move
+      ~FeeAtt.mv
+      ~FeeAtt.mv_ginput
+      ~FeeAtt.mvr
+      ~FeeAtt.pause
+      ~FeeAtt.put
+      ~FeeAtt.read
+      ~FeeAtt.read_configuration
+      ~FeeAtt.remove
+      ~FeeAtt.resume
+      ~FeeAtt.set
+      ~FeeAtt.set_energy
+      ~FeeAtt.stage
+      ~FeeAtt.stop
+      ~FeeAtt.subscribe
+      ~FeeAtt.summary
+      ~FeeAtt.trigger
+      ~FeeAtt.tweak
+      ~FeeAtt.umv
+      ~FeeAtt.umvr
+      ~FeeAtt.unstage
+      ~FeeAtt.unsubscribe
+      ~FeeAtt.unsubscribe_all
+      ~FeeAtt.wait_for_connection
+      ~FeeAtt.wm
+      ~FeeAtt.wm_update
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~FeeAtt.SUB_ACQ_DONE
+      ~FeeAtt.SUB_DONE
+      ~FeeAtt.SUB_READBACK
+      ~FeeAtt.SUB_START
+      ~FeeAtt.actuate
+      ~FeeAtt.actuate_value
+      ~FeeAtt.calcpend
+      ~FeeAtt.component_names
+      ~FeeAtt.configuration_attrs
+      ~FeeAtt.connected
+      ~FeeAtt.done
+      ~FeeAtt.done_value
+      ~FeeAtt.eget_cmd
+      ~FeeAtt.egu
+      ~FeeAtt.energy
+      ~FeeAtt.event_types
+      ~FeeAtt.filter1
+      ~FeeAtt.filter2
+      ~FeeAtt.filter3
+      ~FeeAtt.filter4
+      ~FeeAtt.filter5
+      ~FeeAtt.filter6
+      ~FeeAtt.filter7
+      ~FeeAtt.filter8
+      ~FeeAtt.filter9
+      ~FeeAtt.high_limit
+      ~FeeAtt.hints
+      ~FeeAtt.inserted
+      ~FeeAtt.kind
+      ~FeeAtt.limits
+      ~FeeAtt.low_limit
+      ~FeeAtt.moving
+      ~FeeAtt.name
+      ~FeeAtt.num_att
+      ~FeeAtt.parent
+      ~FeeAtt.position
+      ~FeeAtt.put_complete
+      ~FeeAtt.read_attrs
+      ~FeeAtt.readback
+      ~FeeAtt.removed
+      ~FeeAtt.report
+      ~FeeAtt.root
+      ~FeeAtt.setpoint
+      ~FeeAtt.settle_time
+      ~FeeAtt.signal_names
+      ~FeeAtt.stop_signal
+      ~FeeAtt.stop_value
+      ~FeeAtt.timeout
+      ~FeeAtt.trans_ceil
+      ~FeeAtt.trans_floor
+      ~FeeAtt.transmission
+      ~FeeAtt.trigger_signals
+      ~FeeAtt.user_energy
+   
+   

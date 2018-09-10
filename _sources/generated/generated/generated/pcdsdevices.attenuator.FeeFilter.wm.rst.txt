@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeFilter.wm
+===================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeFilter.wm

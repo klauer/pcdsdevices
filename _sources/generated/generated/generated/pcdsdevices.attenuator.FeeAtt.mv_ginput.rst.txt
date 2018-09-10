@@ -1,0 +1,6 @@
+pcdsdevices.attenuator.FeeAtt.mv\_ginput
+========================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. automethod:: FeeAtt.mv_ginput

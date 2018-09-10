@@ -1,0 +1,91 @@
+pcdsdevices.attenuator.FeeFilter
+================================
+
+.. currentmodule:: pcdsdevices.attenuator
+
+.. autoclass:: FeeFilter
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: generated
+   
+      ~FeeFilter.__init__
+      ~FeeFilter.camonitor
+      ~FeeFilter.check_value
+      ~FeeFilter.clear_sub
+      ~FeeFilter.configure
+      ~FeeFilter.describe
+      ~FeeFilter.describe_configuration
+      ~FeeFilter.end_monitor_thread
+      ~FeeFilter.get
+      ~FeeFilter.get_device_tuple
+      ~FeeFilter.get_instantiated_signals
+      ~FeeFilter.get_state
+      ~FeeFilter.insert
+      ~FeeFilter.move
+      ~FeeFilter.mv
+      ~FeeFilter.pause
+      ~FeeFilter.put
+      ~FeeFilter.read
+      ~FeeFilter.read_configuration
+      ~FeeFilter.remove
+      ~FeeFilter.resume
+      ~FeeFilter.set
+      ~FeeFilter.stage
+      ~FeeFilter.stop
+      ~FeeFilter.subscribe
+      ~FeeFilter.summary
+      ~FeeFilter.trigger
+      ~FeeFilter.unstage
+      ~FeeFilter.unsubscribe
+      ~FeeFilter.unsubscribe_all
+      ~FeeFilter.wait_for_connection
+      ~FeeFilter.wm
+      ~FeeFilter.wm_update
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~FeeFilter.SUB_ACQ_DONE
+      ~FeeFilter.SUB_DONE
+      ~FeeFilter.SUB_READBACK
+      ~FeeFilter.SUB_START
+      ~FeeFilter.SUB_STATE
+      ~FeeFilter.component_names
+      ~FeeFilter.configuration_attrs
+      ~FeeFilter.connected
+      ~FeeFilter.egu
+      ~FeeFilter.event_types
+      ~FeeFilter.high_limit
+      ~FeeFilter.hints
+      ~FeeFilter.in_states
+      ~FeeFilter.inserted
+      ~FeeFilter.kind
+      ~FeeFilter.limits
+      ~FeeFilter.low_limit
+      ~FeeFilter.moving
+      ~FeeFilter.name
+      ~FeeFilter.out_states
+      ~FeeFilter.parent
+      ~FeeFilter.position
+      ~FeeFilter.read_attrs
+      ~FeeFilter.removed
+      ~FeeFilter.report
+      ~FeeFilter.root
+      ~FeeFilter.settle_time
+      ~FeeFilter.signal_names
+      ~FeeFilter.state
+      ~FeeFilter.states_list
+      ~FeeFilter.timeout
+      ~FeeFilter.transmission
+      ~FeeFilter.trigger_signals
+   
+   
