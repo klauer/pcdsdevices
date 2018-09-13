@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Common EPICS Devices &mdash; PCDS Devices 0.8.0+186.g34db686 documentation</title>
+  <title>Common EPICS Devices &mdash; PCDS Devices 0.8.0+192.g4350f45 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0+186.g34db686
+                0.8.0+192.g4350f45
               </div>
             
           
@@ -95,19 +95,21 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.CCM.html">pcdsdevices.device_types.CCM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.EpicsMotor.html">pcdsdevices.device_types.EpicsMotor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.EventSequencer.html">pcdsdevices.device_types.EventSequencer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.LODCM.html">pcdsdevices.device_types.LODCM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.GateValve.html">pcdsdevices.device_types.GateValve</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.IMS.html">pcdsdevices.device_types.IMS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.IPM.html">pcdsdevices.device_types.IPM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.LODCM.html">pcdsdevices.device_types.LODCM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.Newport.html">pcdsdevices.device_types.Newport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.OffsetMirror.html">pcdsdevices.device_types.OffsetMirror</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.PIM.html">pcdsdevices.device_types.PIM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.PMC100.html">pcdsdevices.device_types.PMC100</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.OffsetMirror.html">pcdsdevices.device_types.OffsetMirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.PulsePicker.html">pcdsdevices.device_types.PulsePicker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.PointingMirror.html">pcdsdevices.device_types.PointingMirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.PulsePicker.html">pcdsdevices.device_types.PulsePicker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.Reflaser.html">pcdsdevices.device_types.Reflaser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.Slits.html">pcdsdevices.device_types.Slits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.Stopper.html">pcdsdevices.device_types.Stopper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.Trigger.html">pcdsdevices.device_types.Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.TTReflaser.html">pcdsdevices.device_types.TTReflaser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/pcdsdevices.device_types.XFLS.html">pcdsdevices.device_types.XFLS</a></li>
 </ul>
 </li>
@@ -205,44 +207,50 @@
 <tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.EventSequencer.html#pcdsdevices.device_types.EventSequencer" title="pcdsdevices.device_types.EventSequencer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EventSequencer</span></code></a></td>
 <td>Event Sequencer</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.LODCM.html#pcdsdevices.device_types.LODCM" title="pcdsdevices.device_types.LODCM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LODCM</span></code></a></td>
-<td>Large Offset Dual Crystal Monochromator</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.GateValve.html#pcdsdevices.device_types.GateValve" title="pcdsdevices.device_types.GateValve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GateValve</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.GateValve.html#pcdsdevices.device_types.GateValve" title="pcdsdevices.device_types.GateValve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GateValve</span></code></a></td>
 <td>Basic Vacuum Valve</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.IMS.html#pcdsdevices.device_types.IMS" title="pcdsdevices.device_types.IMS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IMS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.IMS.html#pcdsdevices.device_types.IMS" title="pcdsdevices.device_types.IMS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IMS</span></code></a></td>
 <td>PCDS implementation of the Motor Record for IMS motors.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.IPM.html#pcdsdevices.device_types.IPM" title="pcdsdevices.device_types.IPM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IPM</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.IPM.html#pcdsdevices.device_types.IPM" title="pcdsdevices.device_types.IPM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IPM</span></code></a></td>
 <td>Standard intensity position monitor.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.LODCM.html#pcdsdevices.device_types.LODCM" title="pcdsdevices.device_types.LODCM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LODCM</span></code></a></td>
+<td>Large Offset Dual Crystal Monochromator</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.Newport.html#pcdsdevices.device_types.Newport" title="pcdsdevices.device_types.Newport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Newport</span></code></a></td>
 <td>PCDS implementation of the Motor Record for Newport motors</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.PIM.html#pcdsdevices.device_types.PIM" title="pcdsdevices.device_types.PIM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PIM</span></code></a></td>
-<td>Profile intensity monitor, fully motorized and with a detector.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.PMC100.html#pcdsdevices.device_types.PMC100" title="pcdsdevices.device_types.PMC100"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PMC100</span></code></a></td>
-<td>PCDS implementation of the Motor Record PMC100 motors</td>
-</tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.OffsetMirror.html#pcdsdevices.device_types.OffsetMirror" title="pcdsdevices.device_types.OffsetMirror"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OffsetMirror</span></code></a></td>
 <td>X-Ray offset mirror class.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.PulsePicker.html#pcdsdevices.device_types.PulsePicker" title="pcdsdevices.device_types.PulsePicker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PulsePicker</span></code></a></td>
-<td>Device that picks which pulses to let through.</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.PIM.html#pcdsdevices.device_types.PIM" title="pcdsdevices.device_types.PIM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PIM</span></code></a></td>
+<td>Profile intensity monitor, fully motorized and with a detector.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.PointingMirror.html#pcdsdevices.device_types.PointingMirror" title="pcdsdevices.device_types.PointingMirror"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointingMirror</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.PMC100.html#pcdsdevices.device_types.PMC100" title="pcdsdevices.device_types.PMC100"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PMC100</span></code></a></td>
+<td>PCDS implementation of the Motor Record PMC100 motors</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.PointingMirror.html#pcdsdevices.device_types.PointingMirror" title="pcdsdevices.device_types.PointingMirror"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointingMirror</span></code></a></td>
 <td>Retractable <a class="reference internal" href="generated/pcdsdevices.device_types.OffsetMirror.html#pcdsdevices.device_types.OffsetMirror" title="pcdsdevices.device_types.OffsetMirror"><code class="xref any py py-class docutils literal notranslate"><span class="pre">OffsetMirror</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.Slits.html#pcdsdevices.device_types.Slits" title="pcdsdevices.device_types.Slits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Slits</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.PulsePicker.html#pcdsdevices.device_types.PulsePicker" title="pcdsdevices.device_types.PulsePicker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PulsePicker</span></code></a></td>
+<td>Device that picks which pulses to let through.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.Reflaser.html#pcdsdevices.device_types.Reflaser" title="pcdsdevices.device_types.Reflaser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Reflaser</span></code></a></td>
+<td>Simple ReferenceLaser with In/Out States</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.Slits.html#pcdsdevices.device_types.Slits" title="pcdsdevices.device_types.Slits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Slits</span></code></a></td>
 <td>Beam slits with combined motion for center and width.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.Stopper.html#pcdsdevices.device_types.Stopper" title="pcdsdevices.device_types.Stopper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stopper</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.Stopper.html#pcdsdevices.device_types.Stopper" title="pcdsdevices.device_types.Stopper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stopper</span></code></a></td>
 <td>Controls Stopper</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.Trigger.html#pcdsdevices.device_types.Trigger" title="pcdsdevices.device_types.Trigger"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Trigger</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.Trigger.html#pcdsdevices.device_types.Trigger" title="pcdsdevices.device_types.Trigger"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Trigger</span></code></a></td>
 <td>Class for an individual Trigger</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.TTReflaser.html#pcdsdevices.device_types.TTReflaser" title="pcdsdevices.device_types.TTReflaser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TTReflaser</span></code></a></td>
+<td>Motor stack that includes both a timetool and a reflaser.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.XFLS.html#pcdsdevices.device_types.XFLS" title="pcdsdevices.device_types.XFLS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XFLS</span></code></a></td>
 <td>XRay Focusing Lens (Be)</td>
@@ -293,7 +301,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.8.0+186.g34db686',
+            VERSION:'0.8.0+192.g4350f45',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.move
+=======================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.move

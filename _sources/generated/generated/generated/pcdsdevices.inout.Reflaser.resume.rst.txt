@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.resume
+=================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.resume

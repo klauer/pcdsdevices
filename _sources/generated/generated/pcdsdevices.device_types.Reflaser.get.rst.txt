@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.get
+======================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.get

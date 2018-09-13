@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.unstage
+==================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.unstage

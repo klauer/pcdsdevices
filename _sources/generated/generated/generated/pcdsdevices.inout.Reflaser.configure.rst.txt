@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.configure
+====================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.configure

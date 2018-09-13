@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pcdsdevices.device_types.TTReflaser.configure &mdash; PCDS Devices 0.8.0+192.g4350f45 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="pcdsdevices.device_types.TTReflaser.describe" href="pcdsdevices.device_types.TTReflaser.describe.html" />
+    <link rel="prev" title="pcdsdevices.device_types.TTReflaser.clear_sub" href="pcdsdevices.device_types.TTReflaser.clear_sub.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PCDS Devices
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.8.0+192.g4350f45
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../mv.html">Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../presets.html">Preset Positions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Device Types</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../epics_types.html">Common EPICS Devices</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.Attenuator.html">pcdsdevices.device_types.Attenuator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.BeckhoffAxis.html">pcdsdevices.device_types.BeckhoffAxis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.CCM.html">pcdsdevices.device_types.CCM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.EpicsMotor.html">pcdsdevices.device_types.EpicsMotor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.EventSequencer.html">pcdsdevices.device_types.EventSequencer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.GateValve.html">pcdsdevices.device_types.GateValve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.IMS.html">pcdsdevices.device_types.IMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.IPM.html">pcdsdevices.device_types.IPM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.LODCM.html">pcdsdevices.device_types.LODCM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.Newport.html">pcdsdevices.device_types.Newport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.OffsetMirror.html">pcdsdevices.device_types.OffsetMirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.PIM.html">pcdsdevices.device_types.PIM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.PMC100.html">pcdsdevices.device_types.PMC100</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.PointingMirror.html">pcdsdevices.device_types.PointingMirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.PulsePicker.html">pcdsdevices.device_types.PulsePicker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.Reflaser.html">pcdsdevices.device_types.Reflaser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.Slits.html">pcdsdevices.device_types.Slits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.Stopper.html">pcdsdevices.device_types.Stopper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.Trigger.html">pcdsdevices.device_types.Trigger</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../pcdsdevices.device_types.TTReflaser.html">pcdsdevices.device_types.TTReflaser</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.__init__.html">pcdsdevices.device_types.TTReflaser.__init__</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.camonitor.html">pcdsdevices.device_types.TTReflaser.camonitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.check_value.html">pcdsdevices.device_types.TTReflaser.check_value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.clear_sub.html">pcdsdevices.device_types.TTReflaser.clear_sub</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pcdsdevices.device_types.TTReflaser.configure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.describe.html">pcdsdevices.device_types.TTReflaser.describe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.describe_configuration.html">pcdsdevices.device_types.TTReflaser.describe_configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.end_monitor_thread.html">pcdsdevices.device_types.TTReflaser.end_monitor_thread</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.get.html">pcdsdevices.device_types.TTReflaser.get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.get_device_tuple.html">pcdsdevices.device_types.TTReflaser.get_device_tuple</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.get_instantiated_signals.html">pcdsdevices.device_types.TTReflaser.get_instantiated_signals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.get_state.html">pcdsdevices.device_types.TTReflaser.get_state</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.insert.html">pcdsdevices.device_types.TTReflaser.insert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.move.html">pcdsdevices.device_types.TTReflaser.move</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.mv.html">pcdsdevices.device_types.TTReflaser.mv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.pause.html">pcdsdevices.device_types.TTReflaser.pause</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.put.html">pcdsdevices.device_types.TTReflaser.put</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.read.html">pcdsdevices.device_types.TTReflaser.read</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.read_configuration.html">pcdsdevices.device_types.TTReflaser.read_configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.remove.html">pcdsdevices.device_types.TTReflaser.remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.resume.html">pcdsdevices.device_types.TTReflaser.resume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.set.html">pcdsdevices.device_types.TTReflaser.set</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.stage.html">pcdsdevices.device_types.TTReflaser.stage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.stop.html">pcdsdevices.device_types.TTReflaser.stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.subscribe.html">pcdsdevices.device_types.TTReflaser.subscribe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.summary.html">pcdsdevices.device_types.TTReflaser.summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.trigger.html">pcdsdevices.device_types.TTReflaser.trigger</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.unstage.html">pcdsdevices.device_types.TTReflaser.unstage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.unsubscribe.html">pcdsdevices.device_types.TTReflaser.unsubscribe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.unsubscribe_all.html">pcdsdevices.device_types.TTReflaser.unsubscribe_all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.wait_for_connection.html">pcdsdevices.device_types.TTReflaser.wait_for_connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.wm.html">pcdsdevices.device_types.TTReflaser.wm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.TTReflaser.wm_update.html">pcdsdevices.device_types.TTReflaser.wm_update</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pcdsdevices.device_types.XFLS.html">pcdsdevices.device_types.XFLS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../base_classes.html">Base Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sim_types.html">Simulated Devices</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../releases.html">Release History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">Full API</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PCDS Devices</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../epics_types.html">Common EPICS Devices</a> &raquo;</li>
+        
+          <li><a href="../pcdsdevices.device_types.TTReflaser.html">pcdsdevices.device_types.TTReflaser</a> &raquo;</li>
+        
+      <li>pcdsdevices.device_types.TTReflaser.configure</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/generated/generated/pcdsdevices.device_types.TTReflaser.configure.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pcdsdevices-device-types-ttreflaser-configure">
+<h1>pcdsdevices.device_types.TTReflaser.configure<a class="headerlink" href="#pcdsdevices-device-types-ttreflaser-configure" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="pcdsdevices.device_types.TTReflaser.configure">
+<code class="descclassname">TTReflaser.</code><code class="descname">configure</code><span class="sig-paren">(</span><em>d: Dict[str, Any]</em><span class="sig-paren">)</span> &#x2192; Tuple[Dict[str, Any], Dict[str, Any]]<a class="headerlink" href="#pcdsdevices.device_types.TTReflaser.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure the device for something during a run</p>
+<p>This default implementation allows the user to change any of the
+<code class="xref any docutils literal notranslate"><span class="pre">configuration_attrs</span></code>. Subclasses might override this to perform
+additional input validation, cleanup, etc.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>d</strong> (<em>dict</em>) – The configuration dictionary. To specify the order that
+the changes should be made, use an OrderedDict.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
+<li><em>(old, new) tuple of dictionaries</em></li>
+<li><em>Where old and new are pre- and post-configure configuration states.</em></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pcdsdevices.device_types.TTReflaser.describe.html" class="btn btn-neutral float-right" title="pcdsdevices.device_types.TTReflaser.describe" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pcdsdevices.device_types.TTReflaser.clear_sub.html" class="btn btn-neutral" title="pcdsdevices.device_types.TTReflaser.clear_sub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, SLAC National Accelerator Laboratory.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.8.0+192.g4350f45',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

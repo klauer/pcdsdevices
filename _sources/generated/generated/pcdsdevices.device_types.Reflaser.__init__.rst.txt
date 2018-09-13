@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.\_\_init\_\_
+===============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.__init__

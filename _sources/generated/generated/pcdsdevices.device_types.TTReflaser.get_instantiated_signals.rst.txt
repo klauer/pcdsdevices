@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.TTReflaser.get\_instantiated\_signals
+===============================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: TTReflaser.get_instantiated_signals

@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.TTReflaser.insert
+===========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: TTReflaser.insert

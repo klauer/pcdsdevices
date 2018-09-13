@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.move
+===============================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.move

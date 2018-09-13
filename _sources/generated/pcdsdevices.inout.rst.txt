@@ -17,6 +17,7 @@ pcdsdevices.inout
       InOutPVStatePositioner
       InOutPositioner
       InOutRecordPositioner
+      Reflaser
       TTReflaser
    
    

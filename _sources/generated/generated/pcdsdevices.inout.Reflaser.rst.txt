@@ -1,0 +1,92 @@
+pcdsdevices.inout.Reflaser
+==========================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. autoclass:: Reflaser
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: generated
+   
+      ~Reflaser.__init__
+      ~Reflaser.camonitor
+      ~Reflaser.check_value
+      ~Reflaser.clear_sub
+      ~Reflaser.configure
+      ~Reflaser.describe
+      ~Reflaser.describe_configuration
+      ~Reflaser.end_monitor_thread
+      ~Reflaser.get
+      ~Reflaser.get_device_tuple
+      ~Reflaser.get_instantiated_signals
+      ~Reflaser.get_state
+      ~Reflaser.insert
+      ~Reflaser.move
+      ~Reflaser.mv
+      ~Reflaser.pause
+      ~Reflaser.put
+      ~Reflaser.read
+      ~Reflaser.read_configuration
+      ~Reflaser.remove
+      ~Reflaser.resume
+      ~Reflaser.set
+      ~Reflaser.stage
+      ~Reflaser.stop
+      ~Reflaser.subscribe
+      ~Reflaser.summary
+      ~Reflaser.trigger
+      ~Reflaser.unstage
+      ~Reflaser.unsubscribe
+      ~Reflaser.unsubscribe_all
+      ~Reflaser.wait_for_connection
+      ~Reflaser.wm
+      ~Reflaser.wm_update
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Reflaser.SUB_ACQ_DONE
+      ~Reflaser.SUB_DONE
+      ~Reflaser.SUB_READBACK
+      ~Reflaser.SUB_START
+      ~Reflaser.SUB_STATE
+      ~Reflaser.component_names
+      ~Reflaser.configuration_attrs
+      ~Reflaser.connected
+      ~Reflaser.egu
+      ~Reflaser.event_types
+      ~Reflaser.high_limit
+      ~Reflaser.hints
+      ~Reflaser.in_states
+      ~Reflaser.inserted
+      ~Reflaser.kind
+      ~Reflaser.limits
+      ~Reflaser.low_limit
+      ~Reflaser.moving
+      ~Reflaser.name
+      ~Reflaser.out_states
+      ~Reflaser.parent
+      ~Reflaser.position
+      ~Reflaser.read_attrs
+      ~Reflaser.readback
+      ~Reflaser.removed
+      ~Reflaser.report
+      ~Reflaser.root
+      ~Reflaser.settle_time
+      ~Reflaser.signal_names
+      ~Reflaser.state
+      ~Reflaser.states_list
+      ~Reflaser.timeout
+      ~Reflaser.transmission
+      ~Reflaser.trigger_signals
+   
+   

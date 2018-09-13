@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.get\_instantiated\_signals
+=====================================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.get_instantiated_signals

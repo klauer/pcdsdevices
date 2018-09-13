@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.pause
+========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.pause

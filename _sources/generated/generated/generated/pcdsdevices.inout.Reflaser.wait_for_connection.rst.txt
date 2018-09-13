@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.wait\_for\_connection
+================================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.wait_for_connection

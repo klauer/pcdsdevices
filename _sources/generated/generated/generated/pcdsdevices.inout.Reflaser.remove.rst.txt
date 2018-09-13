@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.remove
+=================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.remove

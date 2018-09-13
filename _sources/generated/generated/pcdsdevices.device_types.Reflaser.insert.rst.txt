@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.insert
+=========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.insert

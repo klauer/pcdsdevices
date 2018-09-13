@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.check\_value
+===============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.check_value

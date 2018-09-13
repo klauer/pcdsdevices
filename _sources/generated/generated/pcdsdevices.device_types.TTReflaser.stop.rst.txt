@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.TTReflaser.stop
+=========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: TTReflaser.stop

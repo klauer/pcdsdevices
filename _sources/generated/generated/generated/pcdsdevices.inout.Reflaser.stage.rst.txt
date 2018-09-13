@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.stage
+================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.stage

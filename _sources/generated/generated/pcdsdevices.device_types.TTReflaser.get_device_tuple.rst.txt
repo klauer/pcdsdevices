@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.TTReflaser.get\_device\_tuple
+=======================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: TTReflaser.get_device_tuple

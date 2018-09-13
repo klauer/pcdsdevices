@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.camonitor
+====================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.camonitor

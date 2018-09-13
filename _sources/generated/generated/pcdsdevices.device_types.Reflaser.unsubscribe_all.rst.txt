@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.unsubscribe\_all
+===================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.unsubscribe_all

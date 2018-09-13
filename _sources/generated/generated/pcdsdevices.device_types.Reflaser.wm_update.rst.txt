@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.wm\_update
+=============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.wm_update

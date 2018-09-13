@@ -1,0 +1,92 @@
+pcdsdevices.device\_types.TTReflaser
+====================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. autoclass:: TTReflaser
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: generated
+   
+      ~TTReflaser.__init__
+      ~TTReflaser.camonitor
+      ~TTReflaser.check_value
+      ~TTReflaser.clear_sub
+      ~TTReflaser.configure
+      ~TTReflaser.describe
+      ~TTReflaser.describe_configuration
+      ~TTReflaser.end_monitor_thread
+      ~TTReflaser.get
+      ~TTReflaser.get_device_tuple
+      ~TTReflaser.get_instantiated_signals
+      ~TTReflaser.get_state
+      ~TTReflaser.insert
+      ~TTReflaser.move
+      ~TTReflaser.mv
+      ~TTReflaser.pause
+      ~TTReflaser.put
+      ~TTReflaser.read
+      ~TTReflaser.read_configuration
+      ~TTReflaser.remove
+      ~TTReflaser.resume
+      ~TTReflaser.set
+      ~TTReflaser.stage
+      ~TTReflaser.stop
+      ~TTReflaser.subscribe
+      ~TTReflaser.summary
+      ~TTReflaser.trigger
+      ~TTReflaser.unstage
+      ~TTReflaser.unsubscribe
+      ~TTReflaser.unsubscribe_all
+      ~TTReflaser.wait_for_connection
+      ~TTReflaser.wm
+      ~TTReflaser.wm_update
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~TTReflaser.SUB_ACQ_DONE
+      ~TTReflaser.SUB_DONE
+      ~TTReflaser.SUB_READBACK
+      ~TTReflaser.SUB_START
+      ~TTReflaser.SUB_STATE
+      ~TTReflaser.component_names
+      ~TTReflaser.configuration_attrs
+      ~TTReflaser.connected
+      ~TTReflaser.egu
+      ~TTReflaser.event_types
+      ~TTReflaser.high_limit
+      ~TTReflaser.hints
+      ~TTReflaser.in_states
+      ~TTReflaser.inserted
+      ~TTReflaser.kind
+      ~TTReflaser.limits
+      ~TTReflaser.low_limit
+      ~TTReflaser.moving
+      ~TTReflaser.name
+      ~TTReflaser.out_states
+      ~TTReflaser.parent
+      ~TTReflaser.position
+      ~TTReflaser.read_attrs
+      ~TTReflaser.readback
+      ~TTReflaser.removed
+      ~TTReflaser.report
+      ~TTReflaser.root
+      ~TTReflaser.settle_time
+      ~TTReflaser.signal_names
+      ~TTReflaser.state
+      ~TTReflaser.states_list
+      ~TTReflaser.timeout
+      ~TTReflaser.transmission
+      ~TTReflaser.trigger_signals
+   
+   

@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.read\_configuration
+==============================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.read_configuration

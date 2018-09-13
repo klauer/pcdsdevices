@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.unsubscribe\_all
+===========================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.unsubscribe_all

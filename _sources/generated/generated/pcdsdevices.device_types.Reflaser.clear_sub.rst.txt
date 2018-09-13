@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.clear\_sub
+=============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.clear_sub

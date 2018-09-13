@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Reflaser.describe
+===========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Reflaser.describe

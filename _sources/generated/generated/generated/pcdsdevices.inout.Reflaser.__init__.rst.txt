@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.\_\_init\_\_
+=======================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.__init__

@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.stop
+===============================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.stop

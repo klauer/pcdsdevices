@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.TTReflaser.summary
+============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: TTReflaser.summary

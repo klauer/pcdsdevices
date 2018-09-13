@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.get
+==============================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.get

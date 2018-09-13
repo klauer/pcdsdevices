@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.TTReflaser.stage
+==========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: TTReflaser.stage

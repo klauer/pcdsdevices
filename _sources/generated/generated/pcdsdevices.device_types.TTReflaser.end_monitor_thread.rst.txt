@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.TTReflaser.end\_monitor\_thread
+=========================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: TTReflaser.end_monitor_thread

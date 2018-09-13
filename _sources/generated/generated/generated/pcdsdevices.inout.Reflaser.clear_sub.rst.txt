@@ -1,0 +1,6 @@
+pcdsdevices.inout.Reflaser.clear\_sub
+=====================================
+
+.. currentmodule:: pcdsdevices.inout
+
+.. automethod:: Reflaser.clear_sub
