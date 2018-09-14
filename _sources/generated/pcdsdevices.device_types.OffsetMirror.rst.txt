@@ -45,6 +45,7 @@ pcdsdevices.device\_types.OffsetMirror
    .. autosummary::
    
       ~OffsetMirror.SUB_ACQ_DONE
+      ~OffsetMirror.SUB_STATE
       ~OffsetMirror.component_names
       ~OffsetMirror.configuration_attrs
       ~OffsetMirror.connected

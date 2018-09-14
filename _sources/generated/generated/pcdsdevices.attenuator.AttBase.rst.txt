@@ -63,6 +63,7 @@ pcdsdevices.attenuator.AttBase
       ~AttBase.SUB_DONE
       ~AttBase.SUB_READBACK
       ~AttBase.SUB_START
+      ~AttBase.SUB_STATE
       ~AttBase.actuate
       ~AttBase.actuate_value
       ~AttBase.calcpend

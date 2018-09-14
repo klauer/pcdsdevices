@@ -63,6 +63,7 @@ pcdsdevices.attenuator.FeeAtt
       ~FeeAtt.SUB_DONE
       ~FeeAtt.SUB_READBACK
       ~FeeAtt.SUB_START
+      ~FeeAtt.SUB_STATE
       ~FeeAtt.actuate
       ~FeeAtt.actuate_value
       ~FeeAtt.calcpend
