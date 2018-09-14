@@ -69,6 +69,7 @@ pcdsdevices.epics\_motor.PCDSMotorBase
       ~PCDSMotorBase.component_names
       ~PCDSMotorBase.configuration_attrs
       ~PCDSMotorBase.connected
+      ~PCDSMotorBase.description
       ~PCDSMotorBase.direction_of_travel
       ~PCDSMotorBase.disabled
       ~PCDSMotorBase.egu

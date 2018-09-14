@@ -69,6 +69,7 @@ pcdsdevices.epics\_motor.Newport
       ~Newport.component_names
       ~Newport.configuration_attrs
       ~Newport.connected
+      ~Newport.description
       ~Newport.direction_of_travel
       ~Newport.disabled
       ~Newport.egu

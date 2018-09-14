@@ -68,6 +68,7 @@ pcdsdevices.epics\_motor.EpicsMotorInterface
       ~EpicsMotorInterface.component_names
       ~EpicsMotorInterface.configuration_attrs
       ~EpicsMotorInterface.connected
+      ~EpicsMotorInterface.description
       ~EpicsMotorInterface.direction_of_travel
       ~EpicsMotorInterface.disabled
       ~EpicsMotorInterface.egu

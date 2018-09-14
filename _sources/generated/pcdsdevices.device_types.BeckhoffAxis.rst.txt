@@ -70,6 +70,7 @@ pcdsdevices.device\_types.BeckhoffAxis
       ~BeckhoffAxis.component_names
       ~BeckhoffAxis.configuration_attrs
       ~BeckhoffAxis.connected
+      ~BeckhoffAxis.description
       ~BeckhoffAxis.direction_of_travel
       ~BeckhoffAxis.disabled
       ~BeckhoffAxis.egu

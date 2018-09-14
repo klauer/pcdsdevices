@@ -76,6 +76,7 @@ pcdsdevices.epics\_motor.IMS
       ~IMS.component_names
       ~IMS.configuration_attrs
       ~IMS.connected
+      ~IMS.description
       ~IMS.direction_of_travel
       ~IMS.disabled
       ~IMS.egu

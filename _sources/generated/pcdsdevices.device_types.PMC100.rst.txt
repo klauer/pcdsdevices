@@ -69,6 +69,7 @@ pcdsdevices.device\_types.PMC100
       ~PMC100.component_names
       ~PMC100.configuration_attrs
       ~PMC100.connected
+      ~PMC100.description
       ~PMC100.direction_of_travel
       ~PMC100.disabled
       ~PMC100.egu
