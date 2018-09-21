@@ -69,6 +69,7 @@ pcdsdevices.slits.Slits
       ~Slits.inserted
       ~Slits.kind
       ~Slits.name
+      ~Slits.nominal_aperture
       ~Slits.open_cmd
       ~Slits.parent
       ~Slits.position
@@ -77,7 +78,6 @@ pcdsdevices.slits.Slits
       ~Slits.report
       ~Slits.root
       ~Slits.signal_names
-      ~Slits.transmission
       ~Slits.trigger_signals
       ~Slits.xcenter
       ~Slits.xwidth

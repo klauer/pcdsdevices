@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.device_types.Slits &mdash; PCDS Devices 0.8.0+202.g86d9d83 documentation</title>
+  <title>pcdsdevices.device_types.Slits &mdash; PCDS Devices 0.8.0+211.g01511d3 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0+202.g86d9d83
+                0.8.0+211.g01511d3
               </div>
             
           
@@ -226,7 +226,7 @@
 <h1>pcdsdevices.device_types.Slits<a class="headerlink" href="#pcdsdevices-device-types-slits" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="pcdsdevices.device_types.Slits">
-<em class="property">class </em><code class="descclassname">pcdsdevices.device_types.</code><code class="descname">Slits</code><span class="sig-paren">(</span><em>*args</em>, <em>nominal_aperture=(5.0</em>, <em>5.0)</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.device_types.Slits" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pcdsdevices.device_types.</code><code class="descname">Slits</code><span class="sig-paren">(</span><em>*args</em>, <em>nominal_aperture=5.0</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.device_types.Slits" title="Permalink to this definition">¶</a></dt>
 <dd><p>Beam slits with combined motion for center and width.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -242,19 +242,13 @@
 </tbody>
 </table>
 <p class="rubric">Notes</p>
-<p>The slits represent a unique device when forming the lightpath as whether
-the beam is being blocked or not depends on the pointing. In order to
-create an estimate that will warn operators of narrowly closed slits while
-still allowing slits to be closed along the beampath.</p>
-<p>The simplest solution was to use a <code class="xref py py-attr docutils literal notranslate"><span class="pre">nominal_aperture</span></code> that stores
-the slit width and height that the slits should use for general operation.
-Using this the <code class="xref py py-attr docutils literal notranslate"><span class="pre">transmission</span></code> is calculated based on how the current
-aperture compares to the nominal, always using the minimum of the width or
-height. This means that if you have a nominal aperture of 2 mm, but your
-slits are set to 0.5 mm, the total estimated transmission will be 25%.
-Obviously this is greatly oversimplified, but it allows the lightpath to
-make a rough back of the hand calculation without being over aggressive
-about changing slit widths during alignment</p>
+<p>The slits represent a unique device when forming the lightpath because
+whether the beam is being blocked or not depends on the pointing. In order
+to create an estimate that will warn operators of “closed” slits, we set a
+<code class="docutils literal notranslate"><span class="pre">nominal_aperture</span></code> for each unique device along the beamline. This is
+value is considered the smallest the slit aperture can become without
+blocking the beamline. Both the <code class="docutils literal notranslate"><span class="pre">width</span></code> and the <code class="docutils literal notranslate"><span class="pre">height</span></code> need to exceed
+this <code class="docutils literal notranslate"><span class="pre">nominal_aperture</span></code> for the <code class="docutils literal notranslate"><span class="pre">Slits</span></code> to be considered removed.</p>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -415,32 +409,32 @@ about changing slit widths during alignment</p>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></td>
 <td>name of the device</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">open_cmd</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">nominal_aperture</span></code></td>
 <td>Component attribute</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">parent</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">open_cmd</span></code></td>
+<td>Component attribute</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">parent</span></code></td>
 <td>The parent of the ophyd object.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">position</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">position</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_attrs</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_attrs</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">removed</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">removed</span></code></td>
 <td>Whether the slits are entirely removed from the beampath</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">report</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">report</span></code></td>
 <td>A report on the object.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">root</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">root</span></code></td>
 <td>Walk parents to find ultimate ancestor (parent’s parent…).</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">signal_names</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">signal_names</span></code></td>
 <td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">transmission</span></code></td>
-<td>Estimated transmission of the slits based on <code class="xref py py-attr docutils literal notranslate"><span class="pre">nominal_aperture</span></code></td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">trigger_signals</span></code></td>
 <td></td>
@@ -505,7 +499,7 @@ about changing slit widths during alignment</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.8.0+202.g86d9d83',
+            VERSION:'0.8.0+211.g01511d3',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
