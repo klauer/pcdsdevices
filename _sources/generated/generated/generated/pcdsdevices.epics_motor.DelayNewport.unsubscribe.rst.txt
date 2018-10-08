@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.unsubscribe
+=================================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.unsubscribe

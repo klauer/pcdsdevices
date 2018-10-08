@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.SimDelayStage.inverse
+===========================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: SimDelayStage.inverse

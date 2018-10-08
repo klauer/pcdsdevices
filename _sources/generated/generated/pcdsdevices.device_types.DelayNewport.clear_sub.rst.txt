@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.clear\_sub
+=================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.clear_sub

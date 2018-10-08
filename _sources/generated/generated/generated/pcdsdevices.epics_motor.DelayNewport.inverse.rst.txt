@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.inverse
+=============================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.inverse

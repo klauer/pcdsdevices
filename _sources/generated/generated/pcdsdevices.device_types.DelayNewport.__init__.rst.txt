@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.\_\_init\_\_
+===================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.__init__

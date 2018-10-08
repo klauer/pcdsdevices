@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.check\_value
+============================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.check_value

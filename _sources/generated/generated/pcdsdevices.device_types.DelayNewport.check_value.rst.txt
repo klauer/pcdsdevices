@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.check\_value
+===================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.check_value

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.inout.InOutPositioner &mdash; PCDS Devices 0.8.0+211.g01511d3 documentation</title>
+  <title>pcdsdevices.inout.InOutPositioner &mdash; PCDS Devices 0.8.0+219.g09c3b88 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0+211.g01511d3
+                0.8.0+219.g09c3b88
               </div>
             
           
@@ -260,22 +260,46 @@ in-progress move as failed.</li>
 <dl class="attribute">
 <dt id="pcdsdevices.inout.InOutPositioner.in_states">
 <code class="descname">in_states</code><a class="headerlink" href="#pcdsdevices.inout.InOutPositioner.in_states" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">list`</span> <span class="pre">of</span> <span class="pre">``str</span></code> – State values that should be considered <code class="docutils literal notranslate"><span class="pre">IN</span></code>.</p>
+<dd><p>State values that should be considered <code class="docutils literal notranslate"><span class="pre">IN</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list`</span> <span class="pre">of</span> <span class="pre">``str</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pcdsdevices.inout.InOutPositioner.out_states">
 <code class="descname">out_states</code><a class="headerlink" href="#pcdsdevices.inout.InOutPositioner.out_states" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">str</span></code> – State values that should be considered <code class="docutils literal notranslate"><span class="pre">OUT</span></code>.</p>
+<dd><p>State values that should be considered <code class="docutils literal notranslate"><span class="pre">OUT</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">str</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pcdsdevices.inout.InOutPositioner._transmission">
 <code class="descname">_transmission</code><a class="headerlink" href="#pcdsdevices.inout.InOutPositioner._transmission" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">dict{str:</span> <span class="pre">float}</span></code> – Mapping from each state to the transmission ratio. This should be a
+<dd><p>Mapping from each state to the transmission ratio. This should be a
 number from 0 to 1. Default values will be 1 (full transmission) for
 <code class="docutils literal notranslate"><span class="pre">out_states</span></code>, 0 (full block) for <code class="docutils literal notranslate"><span class="pre">in_states</span></code>, and nan (no idea!)
 for unaccounted states.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">dict{str:</span> <span class="pre">float}</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <p class="rubric">Methods</p>
@@ -540,7 +564,7 @@ for unaccounted states.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.8.0+211.g01511d3',
+            VERSION:'0.8.0+219.g09c3b88',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -551,6 +575,7 @@ for unaccounted states.</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.SimDelayStage.wait\_for\_connection
+=========================================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: SimDelayStage.wait_for_connection

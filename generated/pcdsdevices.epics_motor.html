@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.epics_motor &mdash; PCDS Devices 0.8.0+211.g01511d3 documentation</title>
+  <title>pcdsdevices.epics_motor &mdash; PCDS Devices 0.8.0+219.g09c3b88 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0+211.g01511d3
+                0.8.0+219.g09c3b88
               </div>
             
           
@@ -102,6 +102,7 @@
 <li class="toctree-l2"><a class="reference internal" href="pcdsdevices.ccm.html">pcdsdevices.ccm</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">pcdsdevices.epics_motor</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="generated/pcdsdevices.epics_motor.BeckhoffAxis.html">pcdsdevices.epics_motor.BeckhoffAxis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/pcdsdevices.epics_motor.DelayNewport.html">pcdsdevices.epics_motor.DelayNewport</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/pcdsdevices.epics_motor.EpicsMotorInterface.html">pcdsdevices.epics_motor.EpicsMotorInterface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/pcdsdevices.epics_motor.IMS.html">pcdsdevices.epics_motor.IMS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/pcdsdevices.epics_motor.Newport.html">pcdsdevices.epics_motor.Newport</a></li>
@@ -208,19 +209,22 @@
 <tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.BeckhoffAxis.html#pcdsdevices.epics_motor.BeckhoffAxis" title="pcdsdevices.epics_motor.BeckhoffAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeckhoffAxis</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>Beckhoff Axis motor record as implemented by ESS.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.EpicsMotorInterface.html#pcdsdevices.epics_motor.EpicsMotorInterface" title="pcdsdevices.epics_motor.EpicsMotorInterface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EpicsMotorInterface</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.DelayNewport.html#pcdsdevices.epics_motor.DelayNewport" title="pcdsdevices.epics_motor.DelayNewport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DelayNewport</span></code></a>(*args[,&nbsp;egu,&nbsp;n_bounces])</td>
+<td>Laser delay stage to rescale a physical axis to a time axis.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.EpicsMotorInterface.html#pcdsdevices.epics_motor.EpicsMotorInterface" title="pcdsdevices.epics_motor.EpicsMotorInterface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EpicsMotorInterface</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>The standard EpicsMotor class, but with our interface attached.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.IMS.html#pcdsdevices.epics_motor.IMS" title="pcdsdevices.epics_motor.IMS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IMS</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.IMS.html#pcdsdevices.epics_motor.IMS" title="pcdsdevices.epics_motor.IMS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IMS</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>PCDS implementation of the Motor Record for IMS motors.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.Newport.html#pcdsdevices.epics_motor.Newport" title="pcdsdevices.epics_motor.Newport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Newport</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.Newport.html#pcdsdevices.epics_motor.Newport" title="pcdsdevices.epics_motor.Newport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Newport</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>PCDS implementation of the Motor Record for Newport motors</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.PCDSMotorBase.html#pcdsdevices.epics_motor.PCDSMotorBase" title="pcdsdevices.epics_motor.PCDSMotorBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PCDSMotorBase</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.PCDSMotorBase.html#pcdsdevices.epics_motor.PCDSMotorBase" title="pcdsdevices.epics_motor.PCDSMotorBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PCDSMotorBase</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>EpicsMotor for PCDS</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.PMC100.html#pcdsdevices.epics_motor.PMC100" title="pcdsdevices.epics_motor.PMC100"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PMC100</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.epics_motor.PMC100.html#pcdsdevices.epics_motor.PMC100" title="pcdsdevices.epics_motor.PMC100"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PMC100</span></code></a>(*args,&nbsp;**kwargs)</td>
 <td>PCDS implementation of the Motor Record PMC100 motors</td>
 </tr>
 </tbody>
@@ -281,7 +285,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.8.0+211.g01511d3',
+            VERSION:'0.8.0+219.g09c3b88',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -292,6 +296,7 @@
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

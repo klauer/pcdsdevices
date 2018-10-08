@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.state.PVStatePositioner &mdash; PCDS Devices 0.8.0+211.g01511d3 documentation</title>
+  <title>pcdsdevices.state.PVStatePositioner &mdash; PCDS Devices 0.8.0+219.g09c3b88 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0+211.g01511d3
+                0.8.0+219.g09c3b88
               </div>
             
           
@@ -253,7 +253,7 @@ in-progress move as failed.</li>
 <dl class="attribute">
 <dt id="pcdsdevices.state.PVStatePositioner._state_logic">
 <code class="descname">_state_logic</code><a class="headerlink" href="#pcdsdevices.state.PVStatePositioner._state_logic" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">dict</span></code> – Information dictionaries for each state of the following form:</p>
+<dd><p>Information dictionaries for each state of the following form:</p>
 <div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="s2">&quot;signal_name&quot;</span><span class="p">:</span> <span class="p">{</span>
                    <span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;OUT&quot;</span><span class="p">,</span>
@@ -269,15 +269,31 @@ each of the states. These states will be evaluated in the dict’s order,
 which may matter if <code class="docutils literal notranslate"><span class="pre">_state_logic_mode</span> <span class="pre">==</span> <span class="pre">'FIRST'</span></code>.</p>
 <p>This is for cases where the logic is simple. If there are more complex
 requirements, replace the <a class="reference internal" href="pcdsdevices.state.StatePositioner.html#pcdsdevices.state.StatePositioner.state" title="pcdsdevices.state.StatePositioner.state"><code class="xref any py py-attr docutils literal notranslate"><span class="pre">state</span></code></a> component.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">dict</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pcdsdevices.state.PVStatePositioner._state_logic_mode">
 <code class="descname">_state_logic_mode</code><a class="headerlink" href="#pcdsdevices.state.PVStatePositioner._state_logic_mode" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">'ALL'</span></code> or <code class="docutils literal notranslate"><span class="pre">'FIRST'</span></code> – This should be <code class="docutils literal notranslate"><span class="pre">ALL</span></code> (default) if the pvs need to agree for a valid
+<dd><p>This should be <code class="docutils literal notranslate"><span class="pre">ALL</span></code> (default) if the pvs need to agree for a valid
 state. You can set this to ‘FIRST’ to instead use the first state
 found while traversing the state_logic tree. This means an earlier
 state definition can mask a later state definition.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">'ALL'</span></code> or <code class="docutils literal notranslate"><span class="pre">'FIRST'</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <p class="rubric">Methods</p>
@@ -521,7 +537,7 @@ state definition can mask a later state definition.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.8.0+211.g01511d3',
+            VERSION:'0.8.0+219.g09c3b88',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -532,6 +548,7 @@ state definition can mask a later state definition.</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

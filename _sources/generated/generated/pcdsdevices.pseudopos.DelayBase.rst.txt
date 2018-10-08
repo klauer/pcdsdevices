@@ -1,0 +1,90 @@
+pcdsdevices.pseudopos.DelayBase
+===============================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. autoclass:: DelayBase
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: generated
+   
+      ~DelayBase.__init__
+      ~DelayBase.check_single
+      ~DelayBase.check_value
+      ~DelayBase.clear_sub
+      ~DelayBase.configure
+      ~DelayBase.describe
+      ~DelayBase.describe_configuration
+      ~DelayBase.forward
+      ~DelayBase.get
+      ~DelayBase.get_device_tuple
+      ~DelayBase.get_instantiated_signals
+      ~DelayBase.inverse
+      ~DelayBase.move
+      ~DelayBase.move_single
+      ~DelayBase.pause
+      ~DelayBase.put
+      ~DelayBase.read
+      ~DelayBase.read_configuration
+      ~DelayBase.resume
+      ~DelayBase.set
+      ~DelayBase.stage
+      ~DelayBase.stop
+      ~DelayBase.subscribe
+      ~DelayBase.summary
+      ~DelayBase.to_pseudo_tuple
+      ~DelayBase.to_real_tuple
+      ~DelayBase.trigger
+      ~DelayBase.unstage
+      ~DelayBase.unsubscribe
+      ~DelayBase.unsubscribe_all
+      ~DelayBase.wait_for_connection
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~DelayBase.SUB_ACQ_DONE
+      ~DelayBase.SUB_DONE
+      ~DelayBase.SUB_READBACK
+      ~DelayBase.SUB_START
+      ~DelayBase.component_names
+      ~DelayBase.composite_egu
+      ~DelayBase.concurrent
+      ~DelayBase.configuration_attrs
+      ~DelayBase.connected
+      ~DelayBase.delay
+      ~DelayBase.egu
+      ~DelayBase.event_types
+      ~DelayBase.high_limit
+      ~DelayBase.hints
+      ~DelayBase.kind
+      ~DelayBase.limits
+      ~DelayBase.low_limit
+      ~DelayBase.motor
+      ~DelayBase.moving
+      ~DelayBase.name
+      ~DelayBase.parent
+      ~DelayBase.position
+      ~DelayBase.pseudo_positioners
+      ~DelayBase.read_attrs
+      ~DelayBase.real_position
+      ~DelayBase.real_positioners
+      ~DelayBase.report
+      ~DelayBase.root
+      ~DelayBase.sequential
+      ~DelayBase.settle_time
+      ~DelayBase.signal_names
+      ~DelayBase.target
+      ~DelayBase.timeout
+      ~DelayBase.trigger_signals
+   
+   

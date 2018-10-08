@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.clear\_sub
+================================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.clear_sub

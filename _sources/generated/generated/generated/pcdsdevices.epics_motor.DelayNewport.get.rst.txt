@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.get
+=========================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.get

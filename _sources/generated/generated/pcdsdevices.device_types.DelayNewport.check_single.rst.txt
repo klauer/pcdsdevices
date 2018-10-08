@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.check\_single
+====================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.check_single

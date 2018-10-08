@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.move\_single
+==================================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.move_single

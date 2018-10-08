@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.resume
+=============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.resume

@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.pause
+============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.pause

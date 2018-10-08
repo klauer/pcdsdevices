@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.configure
+================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.configure

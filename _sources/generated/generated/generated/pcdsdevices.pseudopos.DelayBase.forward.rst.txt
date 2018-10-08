@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.forward
+=======================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.forward

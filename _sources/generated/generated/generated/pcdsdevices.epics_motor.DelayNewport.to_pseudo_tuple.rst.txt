@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.to\_pseudo\_tuple
+=======================================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.to_pseudo_tuple

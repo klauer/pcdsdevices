@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.wait\_for\_connection
+============================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.wait_for_connection

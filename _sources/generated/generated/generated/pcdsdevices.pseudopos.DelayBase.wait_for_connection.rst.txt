@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.wait\_for\_connection
+=====================================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.wait_for_connection

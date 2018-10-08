@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.put
+==========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.put

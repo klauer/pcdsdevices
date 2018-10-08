@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.forward
+==============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.forward

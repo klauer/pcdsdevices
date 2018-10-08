@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.check\_value
+==================================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.check_value

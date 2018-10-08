@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.get\_instantiated\_signals
+==========================================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.get_instantiated_signals

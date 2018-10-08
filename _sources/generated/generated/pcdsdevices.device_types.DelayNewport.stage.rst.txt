@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.stage
+============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.stage

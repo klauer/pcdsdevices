@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.get\_instantiated\_signals
+================================================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.get_instantiated_signals

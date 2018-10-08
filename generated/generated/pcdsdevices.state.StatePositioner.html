@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.state.StatePositioner &mdash; PCDS Devices 0.8.0+211.g01511d3 documentation</title>
+  <title>pcdsdevices.state.StatePositioner &mdash; PCDS Devices 0.8.0+219.g09c3b88 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0+211.g01511d3
+                0.8.0+219.g09c3b88
               </div>
             
           
@@ -253,45 +253,93 @@ in-progress move as failed.</li>
 <dl class="attribute">
 <dt id="pcdsdevices.state.StatePositioner.state">
 <code class="descname">state</code><a class="headerlink" href="#pcdsdevices.state.StatePositioner.state" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">Signal</span></code> – This signal is the final authority on what state the object is in.</p>
+<dd><p>This signal is the final authority on what state the object is in.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">Signal</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pcdsdevices.state.StatePositioner.states_list">
 <code class="descname">states_list</code><a class="headerlink" href="#pcdsdevices.state.StatePositioner.states_list" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">of</span> <span class="pre">str</span></code> – An exhaustive list of all possible states. This should be overridden in
+<dd><p>An exhaustive list of all possible states. This should be overridden in
 a base class. Unknown must be omitted in the class definition and will
 be added dynamically in position 0 when the object is created.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">of</span> <span class="pre">str</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pcdsdevices.state.StatePositioner.states_enum">
 <code class="descname">states_enum</code><a class="headerlink" href="#pcdsdevices.state.StatePositioner.states_enum" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">Enum</span></code> – An enum that represents all possible states. This will be constructed
+<dd><p>An enum that represents all possible states. This will be constructed
 for the user based on the contents of <a class="reference internal" href="#pcdsdevices.state.StatePositioner.states_list" title="pcdsdevices.state.StatePositioner.states_list"><code class="xref any py py-attr docutils literal notranslate"><span class="pre">states_list</span></code></a> and
 <a class="reference internal" href="#pcdsdevices.state.StatePositioner._states_alias" title="pcdsdevices.state.StatePositioner._states_alias"><code class="xref any py py-attr docutils literal notranslate"><span class="pre">_states_alias</span></code></a>, but it can also be overriden in a child class.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">Enum</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pcdsdevices.state.StatePositioner._invalid_states">
 <code class="descname">_invalid_states</code><a class="headerlink" href="#pcdsdevices.state.StatePositioner._invalid_states" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">of</span> <span class="pre">str</span></code> – States that cannot be moved to. This can be optionally overriden to be
+<dd><p>States that cannot be moved to. This can be optionally overriden to be
 extended in a base class. The <a class="reference internal" href="#pcdsdevices.state.StatePositioner._unknown" title="pcdsdevices.state.StatePositioner._unknown"><code class="xref any py py-attr docutils literal notranslate"><span class="pre">_unknown</span></code></a> state will be included
 automatically.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">of</span> <span class="pre">str</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pcdsdevices.state.StatePositioner._unknown">
 <code class="descname">_unknown</code><a class="headerlink" href="#pcdsdevices.state.StatePositioner._unknown" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">str</span></code> – The name of the unknown state, defaulting to ‘Unknown’. This can be set
+<dd><p>The name of the unknown state, defaulting to ‘Unknown’. This can be set
 to <code class="docutils literal notranslate"><span class="pre">False</span></code> if there is no unknown state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">str</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pcdsdevices.state.StatePositioner._states_alias">
 <code class="descname">_states_alias</code><a class="headerlink" href="#pcdsdevices.state.StatePositioner._states_alias" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">dict</span></code> – Mapping of state names to lists of acceptable aliases. This can
+<dd><p>Mapping of state names to lists of acceptable aliases. This can
 optionally be overriden in a child class.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">dict</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <p class="rubric">Methods</p>
@@ -535,7 +583,7 @@ optionally be overriden in a child class.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.8.0+211.g01511d3',
+            VERSION:'0.8.0+219.g09c3b88',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -546,6 +594,7 @@ optionally be overriden in a child class.</p>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

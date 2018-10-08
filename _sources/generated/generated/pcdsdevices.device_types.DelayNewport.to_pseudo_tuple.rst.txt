@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.to\_pseudo\_tuple
+========================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.to_pseudo_tuple

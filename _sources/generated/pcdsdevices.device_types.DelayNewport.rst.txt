@@ -1,0 +1,90 @@
+pcdsdevices.device\_types.DelayNewport
+======================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. autoclass:: DelayNewport
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: generated
+   
+      ~DelayNewport.__init__
+      ~DelayNewport.check_single
+      ~DelayNewport.check_value
+      ~DelayNewport.clear_sub
+      ~DelayNewport.configure
+      ~DelayNewport.describe
+      ~DelayNewport.describe_configuration
+      ~DelayNewport.forward
+      ~DelayNewport.get
+      ~DelayNewport.get_device_tuple
+      ~DelayNewport.get_instantiated_signals
+      ~DelayNewport.inverse
+      ~DelayNewport.move
+      ~DelayNewport.move_single
+      ~DelayNewport.pause
+      ~DelayNewport.put
+      ~DelayNewport.read
+      ~DelayNewport.read_configuration
+      ~DelayNewport.resume
+      ~DelayNewport.set
+      ~DelayNewport.stage
+      ~DelayNewport.stop
+      ~DelayNewport.subscribe
+      ~DelayNewport.summary
+      ~DelayNewport.to_pseudo_tuple
+      ~DelayNewport.to_real_tuple
+      ~DelayNewport.trigger
+      ~DelayNewport.unstage
+      ~DelayNewport.unsubscribe
+      ~DelayNewport.unsubscribe_all
+      ~DelayNewport.wait_for_connection
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~DelayNewport.SUB_ACQ_DONE
+      ~DelayNewport.SUB_DONE
+      ~DelayNewport.SUB_READBACK
+      ~DelayNewport.SUB_START
+      ~DelayNewport.component_names
+      ~DelayNewport.composite_egu
+      ~DelayNewport.concurrent
+      ~DelayNewport.configuration_attrs
+      ~DelayNewport.connected
+      ~DelayNewport.delay
+      ~DelayNewport.egu
+      ~DelayNewport.event_types
+      ~DelayNewport.high_limit
+      ~DelayNewport.hints
+      ~DelayNewport.kind
+      ~DelayNewport.limits
+      ~DelayNewport.low_limit
+      ~DelayNewport.motor
+      ~DelayNewport.moving
+      ~DelayNewport.name
+      ~DelayNewport.parent
+      ~DelayNewport.position
+      ~DelayNewport.pseudo_positioners
+      ~DelayNewport.read_attrs
+      ~DelayNewport.real_position
+      ~DelayNewport.real_positioners
+      ~DelayNewport.report
+      ~DelayNewport.root
+      ~DelayNewport.sequential
+      ~DelayNewport.settle_time
+      ~DelayNewport.signal_names
+      ~DelayNewport.target
+      ~DelayNewport.timeout
+      ~DelayNewport.trigger_signals
+   
+   

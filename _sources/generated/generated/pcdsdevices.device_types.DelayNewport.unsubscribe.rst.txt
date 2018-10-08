@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.unsubscribe
+==================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.unsubscribe

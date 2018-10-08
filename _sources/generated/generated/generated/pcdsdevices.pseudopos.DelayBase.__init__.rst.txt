@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.\_\_init\_\_
+============================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.__init__

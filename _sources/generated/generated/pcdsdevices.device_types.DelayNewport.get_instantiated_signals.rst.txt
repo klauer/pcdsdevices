@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.DelayNewport.get\_instantiated\_signals
+=================================================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: DelayNewport.get_instantiated_signals

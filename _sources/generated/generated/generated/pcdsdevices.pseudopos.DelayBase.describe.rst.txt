@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.describe
+========================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.describe

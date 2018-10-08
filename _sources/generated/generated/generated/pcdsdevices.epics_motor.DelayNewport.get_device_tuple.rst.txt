@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.DelayNewport.get\_device\_tuple
+========================================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: DelayNewport.get_device_tuple

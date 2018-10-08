@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.inverse
+=======================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.inverse

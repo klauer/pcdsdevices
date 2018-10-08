@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.check\_single
+=============================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.check_single

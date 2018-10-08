@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.DelayBase.move
+====================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: DelayBase.move

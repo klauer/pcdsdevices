@@ -1,0 +1,6 @@
+pcdsdevices.pseudopos.SimDelayStage.set
+=======================================
+
+.. currentmodule:: pcdsdevices.pseudopos
+
+.. automethod:: SimDelayStage.set

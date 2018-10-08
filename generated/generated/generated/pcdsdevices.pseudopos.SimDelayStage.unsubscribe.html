@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pcdsdevices.pseudopos.SimDelayStage.unsubscribe &mdash; PCDS Devices 0.8.0+219.g09c3b88 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="pcdsdevices.pseudopos.SimDelayStage.unsubscribe_all" href="pcdsdevices.pseudopos.SimDelayStage.unsubscribe_all.html" />
+    <link rel="prev" title="pcdsdevices.pseudopos.SimDelayStage.unstage" href="pcdsdevices.pseudopos.SimDelayStage.unstage.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> PCDS Devices
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.8.0+219.g09c3b88
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../mv.html">Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../presets.html">Preset Positions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Device Types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../epics_types.html">Common EPICS Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../base_classes.html">Base Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../sim_types.html">Simulated Devices</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Notes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../releases.html">Release History</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../api.html">Full API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.attenuator.html">pcdsdevices.attenuator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.beam_stats.html">pcdsdevices.beam_stats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.ccm.html">pcdsdevices.ccm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.epics_motor.html">pcdsdevices.epics_motor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.evr.html">pcdsdevices.evr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.inout.html">pcdsdevices.inout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.ipm.html">pcdsdevices.ipm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.lens.html">pcdsdevices.lens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.lodcm.html">pcdsdevices.lodcm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.mirror.html">pcdsdevices.mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.movablestand.html">pcdsdevices.movablestand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.mps.html">pcdsdevices.mps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.mv_interface.html">pcdsdevices.mv_interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.pim.html">pcdsdevices.pim</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../pcdsdevices.pseudopos.html">pcdsdevices.pseudopos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.pseudopos.DelayBase.html">pcdsdevices.pseudopos.DelayBase</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pcdsdevices.pseudopos.SimDelayStage.html">pcdsdevices.pseudopos.SimDelayStage</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.__init__.html">pcdsdevices.pseudopos.SimDelayStage.__init__</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.check_single.html">pcdsdevices.pseudopos.SimDelayStage.check_single</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.check_value.html">pcdsdevices.pseudopos.SimDelayStage.check_value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.clear_sub.html">pcdsdevices.pseudopos.SimDelayStage.clear_sub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.configure.html">pcdsdevices.pseudopos.SimDelayStage.configure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.describe.html">pcdsdevices.pseudopos.SimDelayStage.describe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.describe_configuration.html">pcdsdevices.pseudopos.SimDelayStage.describe_configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.forward.html">pcdsdevices.pseudopos.SimDelayStage.forward</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.get.html">pcdsdevices.pseudopos.SimDelayStage.get</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.get_device_tuple.html">pcdsdevices.pseudopos.SimDelayStage.get_device_tuple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.get_instantiated_signals.html">pcdsdevices.pseudopos.SimDelayStage.get_instantiated_signals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.inverse.html">pcdsdevices.pseudopos.SimDelayStage.inverse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.move.html">pcdsdevices.pseudopos.SimDelayStage.move</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.move_single.html">pcdsdevices.pseudopos.SimDelayStage.move_single</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.pause.html">pcdsdevices.pseudopos.SimDelayStage.pause</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.put.html">pcdsdevices.pseudopos.SimDelayStage.put</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.read.html">pcdsdevices.pseudopos.SimDelayStage.read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.read_configuration.html">pcdsdevices.pseudopos.SimDelayStage.read_configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.resume.html">pcdsdevices.pseudopos.SimDelayStage.resume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.set.html">pcdsdevices.pseudopos.SimDelayStage.set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.stage.html">pcdsdevices.pseudopos.SimDelayStage.stage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.stop.html">pcdsdevices.pseudopos.SimDelayStage.stop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.subscribe.html">pcdsdevices.pseudopos.SimDelayStage.subscribe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.summary.html">pcdsdevices.pseudopos.SimDelayStage.summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.to_pseudo_tuple.html">pcdsdevices.pseudopos.SimDelayStage.to_pseudo_tuple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.to_real_tuple.html">pcdsdevices.pseudopos.SimDelayStage.to_real_tuple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.trigger.html">pcdsdevices.pseudopos.SimDelayStage.trigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.unstage.html">pcdsdevices.pseudopos.SimDelayStage.unstage</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pcdsdevices.pseudopos.SimDelayStage.unsubscribe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.unsubscribe_all.html">pcdsdevices.pseudopos.SimDelayStage.unsubscribe_all</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.wait_for_connection.html">pcdsdevices.pseudopos.SimDelayStage.wait_for_connection</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.pseudopos.SyncAxesBase.html">pcdsdevices.pseudopos.SyncAxesBase</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.pulsepicker.html">pcdsdevices.pulsepicker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.signal.html">pcdsdevices.signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.sim.html">pcdsdevices.sim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.slits.html">pcdsdevices.slits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.state.html">pcdsdevices.state</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pcdsdevices.valve.html">pcdsdevices.valve</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">PCDS Devices</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../api.html">Full API</a> &raquo;</li>
+        
+          <li><a href="../../pcdsdevices.pseudopos.html">pcdsdevices.pseudopos</a> &raquo;</li>
+        
+          <li><a href="../pcdsdevices.pseudopos.SimDelayStage.html">pcdsdevices.pseudopos.SimDelayStage</a> &raquo;</li>
+        
+      <li>pcdsdevices.pseudopos.SimDelayStage.unsubscribe</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/generated/generated/generated/pcdsdevices.pseudopos.SimDelayStage.unsubscribe.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pcdsdevices-pseudopos-simdelaystage-unsubscribe">
+<h1>pcdsdevices.pseudopos.SimDelayStage.unsubscribe<a class="headerlink" href="#pcdsdevices-pseudopos-simdelaystage-unsubscribe" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="pcdsdevices.pseudopos.SimDelayStage.unsubscribe">
+<code class="descclassname">SimDelayStage.</code><code class="descname">unsubscribe</code><span class="sig-paren">(</span><em>cid</em><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.pseudopos.SimDelayStage.unsubscribe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a subscription</p>
+<p>See also <a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.subscribe.html#pcdsdevices.pseudopos.SimDelayStage.subscribe" title="pcdsdevices.pseudopos.SimDelayStage.subscribe"><code class="xref py py-meth docutils literal notranslate"><span class="pre">subscribe()</span></code></a>, <a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.clear_sub.html#pcdsdevices.pseudopos.SimDelayStage.clear_sub" title="pcdsdevices.pseudopos.SimDelayStage.clear_sub"><code class="xref py py-meth docutils literal notranslate"><span class="pre">clear_sub()</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cid</strong> (<em>int</em>) – token return by <a class="reference internal" href="pcdsdevices.pseudopos.SimDelayStage.subscribe.html#pcdsdevices.pseudopos.SimDelayStage.subscribe" title="pcdsdevices.pseudopos.SimDelayStage.subscribe"><code class="xref py py-meth docutils literal notranslate"><span class="pre">subscribe()</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pcdsdevices.pseudopos.SimDelayStage.unsubscribe_all.html" class="btn btn-neutral float-right" title="pcdsdevices.pseudopos.SimDelayStage.unsubscribe_all" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pcdsdevices.pseudopos.SimDelayStage.unstage.html" class="btn btn-neutral" title="pcdsdevices.pseudopos.SimDelayStage.unstage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, SLAC National Accelerator Laboratory.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.8.0+219.g09c3b88',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
