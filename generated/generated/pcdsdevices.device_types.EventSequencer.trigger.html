@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.device_types.EventSequencer.trigger &mdash; PCDS Devices 0.8.0+219.g09c3b88 documentation</title>
+  <title>pcdsdevices.device_types.EventSequencer.trigger &mdash; PCDS Devices 0.8.0+228.ge4a9a16 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0+219.g09c3b88
+                0.8.0+228.ge4a9a16
               </div>
             
           
@@ -224,30 +224,21 @@
 <h1>pcdsdevices.device_types.EventSequencer.trigger<a class="headerlink" href="#pcdsdevices-device-types-eventsequencer-trigger" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="pcdsdevices.device_types.EventSequencer.trigger">
-<code class="descclassname">EventSequencer.</code><code class="descname">trigger</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; ophyd.status.StatusBase<a class="headerlink" href="#pcdsdevices.device_types.EventSequencer.trigger" title="Permalink to this definition">¶</a></dt>
-<dd><p>Trigger the device and return status object</p>
-<p>This method is responsible for implementing ‘trigger’ or
-‘acquire’ functionality of this device.</p>
-<p>If there is an appreciable time between triggering the device
-and it being able to be read (via the
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">read()</span></code> method) then this method is
-also responsible for arranging that the
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">StatusBase</span></code> object returned my this method
-is notified when the device is ready to be read.</p>
-<p>If there is no delay between triggering and being readable,
-then this method must return a <code class="xref py py-obj docutils literal notranslate"><span class="pre">SatusBase</span></code>
-object which is already completed.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>status</strong> – <code class="xref py py-obj docutils literal notranslate"><span class="pre">StatusBase</span></code> object which will be marked
-as complete when the device is ready to be read.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">StatusBase</td>
-</tr>
-</tbody>
-</table>
+<code class="descclassname">EventSequencer.</code><code class="descname">trigger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.device_types.EventSequencer.trigger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trigger the EventSequencer</p>
+<p>This method reconfigures the EventSequencer to take a new reading. This
+means:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Stopping the EventSequencer if it is already running</li>
+<li>Restarting the EventSequencer</li>
+</ul>
+</div></blockquote>
+<p>The returned status object will indicate different behavior based on
+the configuration of the EventSequencer itself. If set to “Run
+Forever”, the status object merely indicates that we have succesfully
+started our sequence. Otherwise, the status object will be completed
+when the sequence we have set it to play is complete.</p>
 </dd></dl>
 
 </div>
@@ -294,7 +285,7 @@ as complete when the device is ready to be read.</td>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.8.0+219.g09c3b88',
+            VERSION:'0.8.0+228.ge4a9a16',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -67,12 +67,14 @@ pcdsdevices.device\_types.EventSequencer
       ~EventSequencer.play_status
       ~EventSequencer.pulse_req
       ~EventSequencer.read_attrs
+      ~EventSequencer.rep_count
       ~EventSequencer.report
       ~EventSequencer.root
       ~EventSequencer.sequence_length
       ~EventSequencer.sequence_owner
       ~EventSequencer.signal_names
       ~EventSequencer.sync_marker
+      ~EventSequencer.total_play_count
       ~EventSequencer.trigger_signals
    
    

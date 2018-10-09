@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.device_types.EventSequencer &mdash; PCDS Devices 0.8.0+219.g09c3b88 documentation</title>
+  <title>pcdsdevices.device_types.EventSequencer &mdash; PCDS Devices 0.8.0+228.ge4a9a16 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0+219.g09c3b88
+                0.8.0+228.ge4a9a16
               </div>
             
           
@@ -247,13 +247,7 @@ associated preprocessor.</p>
 </div>
 <p>Run the EventSequencer at each step in my scan after completing the
 motor move and detector reading:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">step_then_sequence</span><span class="p">(</span><span class="n">detectors</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">pos_cache</span><span class="p">)</span>
-    <span class="k">yield from</span> <span class="n">one_nd_step</span><span class="p">(</span><span class="n">detectors</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">pos_cache</span><span class="p">)</span>
-    <span class="k">yield from</span> <span class="n">kickoff</span><span class="p">(</span><span class="n">sequencer</span><span class="p">)</span>
-    <span class="k">yield from</span> <span class="n">complete</span><span class="p">(</span><span class="n">sequencer</span><span class="p">)</span>  <span class="c1"># Waits for sequence to complete if</span>
-                                    <span class="c1"># not in &quot;Run Forever&quot; mode</span>
-
-<span class="n">scan</span><span class="p">([</span><span class="n">det</span><span class="p">],</span> <span class="n">motor</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">per_step</span><span class="o">=</span><span class="n">step_then_sequence</span><span class="p">)</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scan</span><span class="p">([</span><span class="n">sequencer</span><span class="p">],</span> <span class="n">motor</span><span class="p">,</span> <span class="o">....</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -344,7 +338,7 @@ out the scan</p>
 <td></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/pcdsdevices.device_types.EventSequencer.trigger.html#pcdsdevices.device_types.EventSequencer.trigger" title="pcdsdevices.device_types.EventSequencer.trigger"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trigger</span></code></a>()</td>
-<td>Trigger the device and return status object</td>
+<td>Trigger the EventSequencer</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/pcdsdevices.device_types.EventSequencer.unstage.html#pcdsdevices.device_types.EventSequencer.unstage" title="pcdsdevices.device_types.EventSequencer.unstage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unstage</span></code></a>()</td>
 <td>Unstage the device.</td>
@@ -418,22 +412,28 @@ out the scan</p>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_attrs</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">report</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">rep_count</span></code></td>
+<td>Component attribute</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">report</span></code></td>
 <td>A report on the object.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">root</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">root</span></code></td>
 <td>Walk parents to find ultimate ancestor (parent’s parent…).</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence_length</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence_length</span></code></td>
 <td>Component attribute</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence_owner</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence_owner</span></code></td>
 <td>Component attribute</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">signal_names</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">signal_names</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sync_marker</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sync_marker</span></code></td>
+<td>Component attribute</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">total_play_count</span></code></td>
 <td>Component attribute</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">trigger_signals</span></code></td>
@@ -487,7 +487,7 @@ out the scan</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.8.0+219.g09c3b88',
+            VERSION:'0.8.0+228.ge4a9a16',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
