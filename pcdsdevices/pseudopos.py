@@ -154,7 +154,7 @@ class SyncAxesBase(FltMvInterface, PseudoPositioner):
                              'the axes to synchronize included as '
                              'components'))
         super().__init__(*args, **kwargs)
-        self._offsets = {}
+        self._offsets = None
 
     def calc_combined(self, real_position):
         """
@@ -172,8 +172,34 @@ class SyncAxesBase(FltMvInterface, PseudoPositioner):
         pseudo_position : float
             The combined position of the axes.
         """
+        field = self.RealPosition._fields[0]
+        return self._fix_position(field, real_position[0])
 
-        return real_position[0]
+    def _fix_position(self, attr, position):
+        """
+        SyncAxesBase may support single-element PseudoPositioner components.
+
+        This removes the :class:`PseudoPosition` wrapper in the case of
+        single-valued tuple positions.
+
+        Parameters
+        ----------
+        attr : str
+            The RealPosition attribute name, which is the same as the
+            respective component.
+
+        position : float or PseudoPosition
+            The position from the component.
+        """
+        if isinstance(position, typing.Iterable):
+            if len(position) != 1:
+                raise ValueError(
+                    f'This only supports a scalar positioner values.'
+                    f' For {attr} got position: {position}'
+                )
+            position, = position
+
+        return position
 
     def save_offsets(self):
         """
@@ -182,22 +208,25 @@ class SyncAxesBase(FltMvInterface, PseudoPositioner):
         If not done earlier, this will be automatically run before it is first
         needed (generally, right before the first move).
         """
+        # Pre-filter the position to allow for PseudoPositioner usage.
+        fixed_position = [
+            self._fix_position(attr, pos)
+            for attr, pos in zip(self.RealPosition._fields, self.real_position)
+        ]
 
-        pos = self.real_position
-        combo = self.calc_combined(pos)
-        offsets = {fld: getattr(pos, fld) - combo for fld in pos._fields}
-        self._offsets = offsets
-        logger.debug('Offsets %s cached', offsets)
+        pos = self.RealPosition(*fixed_position)
+        offset_for_all = self.calc_combined(pos)
+        self._offsets = pos - self.RealPosition(*([offset_for_all] * len(pos)))
+        logger.debug('Offsets %s cached', self._offsets)
 
     @pseudo_position_argument
     def forward(self, pseudo_pos):
         """Composite axes move to the combined axis position plus an offset."""
-        if not self._offsets:
+        if self._offsets is None:
             self.save_offsets()
-        real_pos = {}
-        for axis, offset in self._offsets.items():
-            real_pos[axis] = pseudo_pos.pseudo + offset
-        return self.RealPosition(**real_pos)
+        return self.RealPosition(
+            *(pseudo_pos.pseudo + offset for offset in self._offsets)
+        )
 
     @real_position_argument
     def inverse(self, real_pos):
@@ -256,6 +285,10 @@ class DelayBase(FltMvInterface, PseudoPositioner):
                              'a "motor" component, the real motor to move.'))
         self.n_bounces = n_bounces
         super().__init__(*args, egu=egu, **kwargs)
+
+    @pseudo_position_argument   # TODO: upstream this fix
+    def check_value(self, value):
+        return super().check_value(value)
 
     @user_offset.sub_value
     def _offset_changed(self, value, **kwargs):

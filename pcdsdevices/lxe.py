@@ -37,11 +37,14 @@ from ophyd import Component as Cpt
 from ophyd import EpicsSignal, PVPositioner
 from ophyd.signal import AttributeSignal
 
-from .epics_motor import EpicsMotorInterface
+from .component import UnrelatedComponent as UCpt
+from .epics_motor import DelayNewport, EpicsMotorInterface
 from .interface import FltMvInterface
 from .pseudopos import (LookupTablePositioner, PseudoSingleInterface,
-                        pseudo_position_argument)
+                        SyncAxesBase, pseudo_position_argument,
+                        real_position_argument)
 from .signal import UnitConversionDerivedSignal
+from .utils import convert_unit
 
 if typing.TYPE_CHECKING:
     import matplotlib  # noqa
@@ -210,6 +213,40 @@ class LaserEnergyPositioner(FltMvInterface, LookupTablePositioner):
         return ret
 
 
+class _ScaledUnitConversionDerivedSignal(UnitConversionDerivedSignal):
+    UnitConversionDerivedSignal.__doc__ + """
+
+    This semi-private class enables scaling of input/output values from
+    :class:`UnitConversionDerivedSignal`.  Perhaps the only scale that will
+    make sense is that of ``-1`` -- effectively reversing the direction of
+    motion for a positioner.
+
+    Attributes
+    ----------
+    scale : float
+        The unitless scale value will be applied in both ``forward`` and
+        ``inverse``: the "original" value will be multiplied by the scale,
+        whereas a new user-specified setpoint value will be divided.
+    """
+    scale = -1
+
+    def forward(self, value):
+        '''Compute derived signal value -> original signal value'''
+        if self.user_offset is not None:
+            value = value - self.user_offset
+        value /= self.scale
+        return convert_unit(value, self.derived_units, self.original_units)
+
+    def inverse(self, value):
+        '''Compute original signal value -> derived signal value'''
+        derived_value = convert_unit(value, self.original_units,
+                                     self.derived_units)
+        derived_value *= self.scale
+        if self.user_offset is not None:
+            derived_value += self.user_offset
+        return derived_value
+
+
 class LaserTiming(FltMvInterface, PVPositioner):
     """
     "lxt" motor, which may also have been referred to as Vitara.
@@ -218,16 +255,21 @@ class LaserTiming(FltMvInterface, PVPositioner):
     internally, such that the user may work in units of seconds.
     """
 
+    limits = (1e-20, 1.1e-3)
     _fs_tgt_time = Cpt(EpicsSignal, ':VIT:FS_TGT_TIME', auto_monitor=True,
-                       kind='omitted')
-    setpoint = Cpt(UnitConversionDerivedSignal,
+                       kind='omitted',
+                       doc='The internal nanosecond-expecting signal.'
+                       )
+    setpoint = Cpt(_ScaledUnitConversionDerivedSignal,
                    derived_from='_fs_tgt_time',
                    derived_units='s',
                    original_units='ns',
                    kind='hinted',
+                   doc='Setpoint which handles the timing conversion.',
                    )
     user_offset = Cpt(AttributeSignal, attr='setpoint.user_offset',
-                      kind='config')
+                      kind='normal',
+                      doc='A Python-level user offset.')
 
     # A motor (record) will be moved after the above record is touched, so
     # use its done motion status:
@@ -253,5 +295,59 @@ class LaserTiming(FltMvInterface, PVPositioner):
             The new current position.
         '''
         self.user_offset.put(0.0)
-        new_offset = self.setpoint.get() + position
+        new_offset = position - self.setpoint.get()
         self.user_offset.put(new_offset)
+
+
+class TimeToolDelay(DelayNewport):
+    """
+    Laser delay stage to rescale the physical time tool delay stage to units of
+    time.
+
+    A replacement for the ``txt`` motor, this class wraps the functionality of
+    both the old time tool delay stage (``tt_delay``, a Newport XPS motor) and
+    that of the ``DelayStage2time`` virtual motor conversions.
+
+    The default number of bounces (2) are reused from :class:`DelayBase`.
+    """
+
+
+class _ReversedTimeToolDelay(DelayNewport):
+    """
+    An inverted version of :class:`TimeToolDelay`.
+    """
+
+    @pseudo_position_argument
+    def forward(self, pseudo_pos):
+        return self.RealPosition(
+            *[-1.0 * p for p in super().forward(pseudo_pos)]
+        )
+
+    @real_position_argument
+    def inverse(self, real_pos):
+        return self.PseudoPosition(
+            *[-1.0 * p for p in super().inverse(real_pos)]
+        )
+
+
+class LaserTimingCompensation(SyncAxesBase):
+    """
+    LaserTimingCompensation (``lxt_ttc``) synchronously moves
+    :class:`LaserTiming` (``lxt``) with :class:`TimeToolDelay` (``txt``) to
+    compensate so that the true laser x-ray delay by using the ``lxt``-value
+    and the result of time tool data analysis, avoiding double-counting.
+
+    Notes
+    -----
+    ``delay`` and ``laser`` are intentionally renamed to non-ophyd-style
+    ``txt`` and ``lxt``, respectively.
+    """
+    pseudo = Cpt(PseudoSingleInterface, limits=(1e-20, 1.1e-3))
+    delay = UCpt(_ReversedTimeToolDelay, doc='The **reversed** txt motor')
+    laser = UCpt(LaserTiming, doc='The lxt motor')
+
+    def __init__(self, prefix, **kwargs):
+        UCpt.collect_prefixes(self, kwargs)
+        super().__init__(prefix, **kwargs)
+        self.delay.name = 'txt'
+        self.laser.name = 'lxt'
