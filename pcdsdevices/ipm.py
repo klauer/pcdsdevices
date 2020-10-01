@@ -295,6 +295,10 @@ class Wave8Channel(BaseInterface, Device):
     delay = FCpt(
         EpicsSignal, '{self.prefix}:Delay{self.channel_index}_RBV',
         write_pv='{self.prefix}:Delay{self.channel_index}', kind='config')
+    peak_a = FCpt(EpicsSignalRO, '{self.prefix}:_peakA_{self.channel_index}',
+                  kind='normal')
+    peak_t = FCpt(EpicsSignalRO, '{self.prefix}:_peakT_{self.channel_index}',
+                  kind='normal')
 
     def __init__(self, prefix, *, name, channel_index,  **kwargs):
         self.channel_index = channel_index
